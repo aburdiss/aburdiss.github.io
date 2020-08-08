@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <hgroup class="Header">
+      <h1>Blackjack</h1>
+      <h2 class="Author">Alexander Burdiss</h2>
+    </hgroup>
+  </header>
+
+  <main>
+    <div class="Card-Table">
+      <div class="Hand-Container">
+        <div class="Hand Hand-User">
+          <div>
+            User 
+            <div class="Score Score-User"></div>
+          </div>
+          <div class="Hand-User-Cards"></div>
+        </div>
+        <div class="Hand Hand-Computer">
+          <div>
+            Computer
+            <div class="Score Score-Computer">?</div>
+          </div>
+          <div class="Hand-Computer-Cards"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Button-Container">
+      <button class="Hit JS-Hit">Hit</button>
+      <button class="Stay JS-Stay">Stay</button>
+    </div>
+    
+    <div class="Bust-Modal">
+      <div class="Bust-Modal-Text">
+        <h2>You Lose!</h2>
+        <p class="Bust-Modal-Message"></p>
+      </div>
+    </div>
+    <div class="Blackjack-Modal">
+      <div class="Bust-Modal-Text">
+        <h2>You Win!</h2>
+        <p class="Blackjack-Modal-Message"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="blackjack.js"></script>
+</body>
+</html>
